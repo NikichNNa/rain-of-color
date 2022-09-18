@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain of colors</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="text_h1">Choose your favorite color</h1> 
+    <div class="color yellow" id="yellow"></div>
+    <div class="color red" id ="red"></div>
+    <div class="color green" id="green"></div>
+    <div class="color pink" id="pink"></div>
+    <div class="color blue" id="blue"></div>
+    <div class="color orange" id="orange"></div>
+<script>
+var elements = document.getElementsByClassName ('color')
+for (var element of elements){
+  const color =element.id;
+  element.onclick=function(){
+    alert ("your favorite color is "+color)
+  }
+}
+
+</script>
+</body>
+</html>
